@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blood {
-    public class Blood {
+namespace AnalizBlood {
+    public class AnalizBlood {
         public static void Glukoza(int x) {
             if (x > 6.5) Console.WriteLine("Повышенный уровень глюкозы: Сахарный диабет");
             else if (x >= 3.5 && x <= 6.5) Console.WriteLine("Уровень глюкозы в норме");
