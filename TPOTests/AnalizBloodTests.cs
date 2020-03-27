@@ -34,6 +34,18 @@ namespace AnalizBlood.Tests {
             Equals(130, "hello", "Введен некорректный пол");
         }
 
+        [TestMethod]
+        public void GemoglobinTestRightGenderFemale()
+        {
+            Equals(150, "female", "Повышенный уровень гемоглобина: Обезвоживании организма, заболевание крови и некоторые виды сердечной недостаточности");
+        }
+
+        [TestMethod]
+        public void GemoglobinTestRightGenderMale()
+        {
+            Equals(100, "male", "Пониженный уровень гемоглобина: Анемия, кровопотеря, скрытое внутреннее кровотечение, поражение внутренних органов");
+        }
+
         private void Equals(double x, string resultat) {
             Assert.AreEqual(resultat, AnalizBlood.Glukoza(x));
         }
